@@ -1,0 +1,1 @@
+/home/oslab/DEMO/os/target/riscv64gc-unknown-none-elf/debug/os: /home/oslab/DEMO/os/src/comlog.rs /home/oslab/DEMO/os/src/console.rs /home/oslab/DEMO/os/src/entry.asm /home/oslab/DEMO/os/src/lang_items.rs /home/oslab/DEMO/os/src/main.rs /home/oslab/DEMO/os/src/sbi.rs
