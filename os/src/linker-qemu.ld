@@ -10,10 +10,6 @@ SECTIONS
     stext = .;
     .text : {
         *(.text.entry)
-        . = ALIGN(4K);
-        strampoline = .;
-        *(.text.trampoline);
-        . = ALIGN(4K);
         *(.text .text.*)
     }
 
@@ -22,6 +18,7 @@ SECTIONS
     srodata = .;
     .rodata : {
         *(.rodata .rodata.*)
+        *(.srodata .srodata.*)
     }
 
     . = ALIGN(4K);
@@ -29,15 +26,16 @@ SECTIONS
     sdata = .;
     .data : {
         *(.data .data.*)
+        *(.sdata .sdata.*)
     }
 
     . = ALIGN(4K);
     edata = .;
-    sbss_with_stack = .;
     .bss : {
         *(.bss.stack)
         sbss = .;
         *(.bss .bss.*)
+        *(.sbss .sbss.*)
     }
 
     . = ALIGN(4K);

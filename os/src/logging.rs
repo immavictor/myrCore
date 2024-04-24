@@ -1,11 +1,17 @@
+/*！
+
+本模块利用 log crate 为你提供了日志功能，使用方式见 main.rs.
+
+*/
+
 use log::{self, Level, LevelFilter, Log, Metadata, Record};
 
 struct SimpleLogger;
+
 impl Log for SimpleLogger {
     fn enabled(&self, _metadata: &Metadata) -> bool {
         true
     }
-
     fn log(&self, record: &Record) {
         if !self.enabled(record.metadata()) {
             return;
@@ -24,7 +30,6 @@ impl Log for SimpleLogger {
             record.args(),
         );
     }
-
     fn flush(&self) {}
 }
 
