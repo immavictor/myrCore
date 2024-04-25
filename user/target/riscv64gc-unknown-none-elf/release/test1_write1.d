@@ -1,0 +1,1 @@
+/home/oslab/myrCore/user/target/riscv64gc-unknown-none-elf/release/test1_write1: /home/oslab/myrCore/user/src/bin/test1_write1.rs /home/oslab/myrCore/user/src/console.rs /home/oslab/myrCore/user/src/lang_items.rs /home/oslab/myrCore/user/src/lib.rs /home/oslab/myrCore/user/src/syscall.rs

@@ -1,4 +1,4 @@
-// os/src/lang_items.rs
+// os/src/lang_items.rs程序在遇到不可恢复错误时最后的处理手段
 use crate::sbi::shutdown;
 use core::panic::PanicInfo;
 use log::*;

@@ -1,7 +1,7 @@
 use crate::sbi::console_putchar;
 use core::fmt::{self, Write};
 
-struct Stdout;
+struct Stdout;//被实现为Write trait的对象，从而允许它进行写操作。
 
 impl Write for Stdout {
     fn write_str(&mut self, s: &str) -> fmt::Result {
