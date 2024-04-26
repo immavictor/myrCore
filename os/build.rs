@@ -51,6 +51,6 @@ app_{0}_start:
 app_{0}_end:"#,
             idx, app, TARGET_PATH
         )?;
-    }
+    }//writeln!(f, ...)?;：向文件 f 写入每个应用程序的 .incbin 指令，包括文件路径和名称。
     Ok(())
 }
